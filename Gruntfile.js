@@ -8,6 +8,10 @@ module.exports = function (grunt) {
   // Configuration
   grunt.initConfig({
     concat: {
+      options: {
+        banner: "(function(){'use strict';\n",
+        footer: "})();",
+      },
       js: {
         src: ["src/*.js"],
         dest: "dist/app.js",
