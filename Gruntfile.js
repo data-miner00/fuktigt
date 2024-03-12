@@ -5,10 +5,20 @@
 module.exports = function (grunt) {
   // Configuration
   grunt.initConfig({
-    //
+    concat: {
+      js: {
+        src: ["src/*.js"],
+        dest: "dist/app.js",
+      },
+      css: {
+        src: ["src/styles/*.css"],
+        dest: "dist/styles.css",
+      },
+    },
   });
 
   // Load plugins
+  grunt.loadNpmTasks("grunt-contrib-concat");
 
   // Register tasks
   grunt.registerTask("run", function () {
@@ -20,4 +30,8 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("test-env", ["run", "run2"]);
+
+  // Run standalone concat tasks
+  grunt.registerTask("concat-js-only", ["concat:js"]);
+  grunt.registerTask("concat-css-only", ["concat:css"]);
 };
