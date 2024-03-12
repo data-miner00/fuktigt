@@ -17,6 +17,7 @@ module.exports = function (grunt) {
         dest: "dist/styles.css",
       },
     },
+
     sass: {
       options: {
         implementation: sass,
@@ -31,10 +32,22 @@ module.exports = function (grunt) {
         ],
       },
     },
+
+    uglify: {
+      build: {
+        files: [
+          {
+            src: "dist/app.js",
+            dest: "dist/app.min.js",
+          },
+        ],
+      },
+    },
   });
 
   // Load plugins
   grunt.loadNpmTasks("grunt-contrib-concat");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-sass");
 
   // Register tasks
