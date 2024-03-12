@@ -49,6 +49,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-jshint");
+  grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks("grunt-sass");
 
   // Register tasks
@@ -68,5 +69,11 @@ module.exports = function (grunt) {
   grunt.registerTask("concat-js-only", ["concat:js"]);
   grunt.registerTask("concat-css-only", ["concat:css"]);
 
-  grunt.registerTask("default", ["concat", "jshint", "sass", "uglify"]);
+  grunt.registerTask("default", [
+    "clean",
+    "concat",
+    "jshint",
+    "sass",
+    "uglify",
+  ]);
 };
