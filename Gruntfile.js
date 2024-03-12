@@ -19,5 +19,5 @@ module.exports = function (grunt) {
     console.log("Running from grunt 2");
   });
 
-  grunt.registerTask("default", ["run", "run2"]);
+  grunt.registerTask("test-env", ["run", "run2"]);
 };
