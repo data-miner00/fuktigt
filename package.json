@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test-env",
+    "test": "node --test",
+    "touch": "grunt test-env",
     "watch": "grunt watch",
     "cloc": "cloc . --vcs=git --exclude-list-file=package-lock.json"
   },
