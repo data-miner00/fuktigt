@@ -48,9 +48,12 @@ module.exports = function (grunt) {
   // Load plugins
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-sass");
 
   // Register tasks
+  grunt.loadTasks("tasks");
+
   grunt.registerTask("run", function () {
     console.log("Running from grunt");
   });
@@ -64,4 +67,6 @@ module.exports = function (grunt) {
   // Run standalone concat tasks
   grunt.registerTask("concat-js-only", ["concat:js"]);
   grunt.registerTask("concat-css-only", ["concat:css"]);
+
+  grunt.registerTask("default", ["jshint", "concat", "sass", "uglify"]);
 };
