@@ -1,3 +1,5 @@
+var sass = require("node-sass");
+
 /**
  * The entry for Grunt task runner.
  * @param {IGrunt} grunt
@@ -15,10 +17,25 @@ module.exports = function (grunt) {
         dest: "dist/styles.css",
       },
     },
+    sass: {
+      options: {
+        implementation: sass,
+        sourceMap: true,
+      },
+      build: {
+        files: [
+          {
+            src: "src/styles/sass/main.sass",
+            dest: "dist/sass.css",
+          },
+        ],
+      },
+    },
   });
 
   // Load plugins
   grunt.loadNpmTasks("grunt-contrib-concat");
+  grunt.loadNpmTasks("grunt-sass");
 
   // Register tasks
   grunt.registerTask("run", function () {
