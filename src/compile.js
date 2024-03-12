@@ -6,5 +6,6 @@
  * @returns The compiled input.
  */
 function compileInputs(input1, input2, input3) {
+  "use strict";
   return input1 + input2 + input3 + "";
 }

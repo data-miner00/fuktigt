@@ -5,5 +5,6 @@
  * @returns The string prefixed with 'this'.
  */
 function prefixWithThis(input1, input2) {
+  "use strict";
   return compileInputs("this", input1, input2);
 }

@@ -68,5 +68,5 @@ module.exports = function (grunt) {
   grunt.registerTask("concat-js-only", ["concat:js"]);
   grunt.registerTask("concat-css-only", ["concat:css"]);
 
-  grunt.registerTask("default", ["jshint", "concat", "sass", "uglify"]);
+  grunt.registerTask("default", ["concat", "jshint", "sass", "uglify"]);
 };
