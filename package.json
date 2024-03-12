@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test-env"
+    "test": "grunt test-env",
+    "watch": "grunt watch"
   },
   "keywords": [],
   "author": "",
