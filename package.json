@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "grunt test-env",
-    "watch": "grunt watch"
+    "watch": "grunt watch",
+    "cloc": "cloc . --vcs=git --exclude-list-file=package-lock.json"
   },
   "keywords": [],
   "author": "",
