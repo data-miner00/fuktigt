@@ -10,7 +10,7 @@ module.exports = function (grunt) {
     concat: {
       options: {
         banner: "(function(){'use strict';\n",
-        footer: "})();",
+        footer: "\n})();",
       },
       js: {
         src: ["src/*.js"],
@@ -81,6 +81,7 @@ module.exports = function (grunt) {
     "jshint",
     "sass",
     "less",
+    "cssmin",
     "uglify",
   ]);
 };
