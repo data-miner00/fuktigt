@@ -1,5 +1,3 @@
-var sass = require("node-sass");
-
 /**
  * The entry for Grunt task runner.
  * @param {IGrunt} grunt
@@ -7,21 +5,6 @@ var sass = require("node-sass");
 module.exports = function (grunt) {
   // Configuration
   grunt.initConfig({
-    sass: {
-      options: {
-        implementation: sass,
-        sourceMap: true,
-      },
-      build: {
-        files: [
-          {
-            src: "src/styles/sass/main.sass",
-            dest: "dist/sass.css",
-          },
-        ],
-      },
-    },
-
     uglify: {
       build: {
         files: [
@@ -40,7 +23,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks("grunt-contrib-less");
   grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-sass");
 
   // Register tasks
   grunt.loadTasks("tasks");
