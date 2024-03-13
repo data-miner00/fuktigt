@@ -3,12 +3,6 @@
  * @param {IGrunt} grunt
  */
 module.exports = function (grunt) {
-  // Load plugins
-  grunt.loadNpmTasks("grunt-contrib-jshint");
-  grunt.loadNpmTasks("grunt-contrib-clean");
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-
   // Register tasks
   grunt.loadTasks("tasks");
 

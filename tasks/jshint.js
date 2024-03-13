@@ -7,10 +7,12 @@ var jshintOptions = JSON.parse(sanitizedJson);
 
 /**
  * The task for JsHint.
+ * Refer to https://github.com/gruntjs/grunt-contrib-jshint
  * @param {IGrunt} grunt
  */
 module.exports = function (grunt) {
   "use strict";
+  grunt.loadNpmTasks("grunt-contrib-jshint");
 
   var config = {
     files: {

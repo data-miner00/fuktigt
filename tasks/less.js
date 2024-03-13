@@ -1,9 +1,11 @@
 /**
- * The task for JsHint.
+ * The task for transpiling LESS to CSS.
+ * Refer to https://github.com/gruntjs/grunt-contrib-less
  * @param {IGrunt} grunt
  */
 module.exports = function (grunt) {
   "use strict";
+  grunt.loadNpmTasks("grunt-contrib-less");
 
   var config = {
     dev: {
