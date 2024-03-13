@@ -7,21 +7,6 @@ var sass = require("node-sass");
 module.exports = function (grunt) {
   // Configuration
   grunt.initConfig({
-    concat: {
-      options: {
-        banner: "(function(){'use strict';\n",
-        footer: "\n})();",
-      },
-      js: {
-        src: ["src/*.js"],
-        dest: "dist/app.js",
-      },
-      css: {
-        src: ["src/styles/*.css"],
-        dest: "dist/styles.css",
-      },
-    },
-
     sass: {
       options: {
         implementation: sass,
@@ -50,7 +35,6 @@ module.exports = function (grunt) {
   });
 
   // Load plugins
-  grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-clean");
