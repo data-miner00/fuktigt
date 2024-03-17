@@ -16,8 +16,8 @@ module.exports = function (grunt) {
     build: {
       files: [
         {
-          src: "src/styles/sass/main.sass",
-          dest: "dist/sass.css",
+          src: "<%= srcPath %>/styles/sass/main.sass",
+          dest: "<%= distPath %>/sass.css",
         },
       ],
     },

@@ -16,7 +16,7 @@ module.exports = function (grunt) {
 
   var config = {
     files: {
-      src: ["dist/app.js"],
+      src: ["<%= distPath %>/app.js"],
     },
     options: jshintOptions,
   };

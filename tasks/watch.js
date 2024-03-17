@@ -8,11 +8,11 @@ module.exports = function (grunt) {
 
   var config = {
     js: {
-      files: ["src/*.js"],
+      files: ["<%= srcPath %>/*.js"],
       tasks: ["concat-js-only"],
     },
     css: {
-      files: ["src/styles/*.css"],
+      files: ["<%= srcPath %>/styles/*.css"],
       tasks: ["concat-css-only"],
     },
   };

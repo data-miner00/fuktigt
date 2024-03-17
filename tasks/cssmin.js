@@ -13,10 +13,10 @@ module.exports = function (grunt) {
     },
     target: {
       files: {
-        "dist/styles.min.css": [
-          "dist/less.css",
-          "dist/sass.css",
-          "dist/styles.css",
+        "<%= distPath %>/styles.min.css": [
+          "<%= distPath %>/less.css",
+          "<%= distPath %>/sass.css",
+          "<%= distPath %>/styles.css",
         ],
       },
     },

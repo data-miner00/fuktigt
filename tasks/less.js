@@ -10,10 +10,10 @@ module.exports = function (grunt) {
   var config = {
     dev: {
       options: {
-        paths: ["src/styles/less"],
+        paths: ["<%= srcPath %>/styles/less"],
       },
       files: {
-        "dist/less.css": "src/styles/less/main.less",
+        "<%= distPath %>/less.css": "<%= srcPath %>/styles/less/main.less",
       },
     },
   };

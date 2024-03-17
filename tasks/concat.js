@@ -12,12 +12,12 @@ module.exports = function (grunt) {
         banner: "(function(){'use strict';\n",
         footer: "\n})();",
       },
-      src: ["src/*.js"],
-      dest: "dist/app.js",
+      src: ["<%= srcPath %>/*.js"],
+      dest: "<%= distPath %>/app.js",
     },
     css: {
-      src: ["src/styles/*.css"],
-      dest: "dist/styles.css",
+      src: ["<%= srcPath %>/styles/*.css"],
+      dest: "<%= distPath %>/styles.css",
     },
   };
 
