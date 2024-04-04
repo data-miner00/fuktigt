@@ -33,5 +33,6 @@ module.exports = function (grunt) {
     "less",
     "cssmin",
     "uglify",
+    "copy",
   ]);
 };
