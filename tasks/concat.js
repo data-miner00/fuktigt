@@ -9,8 +9,8 @@ module.exports = function (grunt) {
   var config = {
     js: {
       options: {
-        banner: "(function(){'use strict';\n",
-        footer: "\n})();",
+        banner: "void function(){'use strict';\n",
+        footer: "\n}();",
       },
       src: ["<%= srcPath %>/*.js"],
       dest: "<%= distPath %>/app.js",
