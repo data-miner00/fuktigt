@@ -7,7 +7,7 @@ module.exports = function (grunt) {
   "use strict";
   grunt.loadNpmTasks("grunt-contrib-clean");
 
-  var config = ["<%= distPath %>"];
+  var config = ["<%= distPath %>", "<%= zipPath %>"];
 
   grunt.config("clean", config);
 };
