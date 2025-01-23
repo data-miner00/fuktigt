@@ -17,7 +17,7 @@
   "author": "Shaun Chong <pkay_@live.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/grunt": "^0.4.31",
+    "@types/grunt": "^0.4.32",
     "grunt": "^1.6.1",
     "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-compress": "^2.0.0",
