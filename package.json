@@ -4,6 +4,7 @@
   "description": "Trying out Grunt.js",
   "main": "dist/app.js",
   "scripts": {
+    "build": "grunt",
     "test": "node --test",
     "touch": "grunt test-env",
     "watch": "grunt watch",
