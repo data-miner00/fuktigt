@@ -1,6 +1,6 @@
 {
   "name": "fuktigt",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Trying out Grunt.js",
   "main": "dist/app.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "@types/grunt": "^0.4.32",
     "grunt": "^1.6.1",
     "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-coffee": "^2.1.0",
     "grunt-contrib-compress": "^2.0.0",
     "grunt-contrib-concat": "^2.1.0",
     "grunt-contrib-copy": "^1.0.0",

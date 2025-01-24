@@ -17,6 +17,7 @@ module.exports = function (grunt) {
   grunt.registerTask("default", [
     "clean",
     "pug",
+    "coffee",
     "concat",
     "string-replace",
     "jshint",
