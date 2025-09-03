@@ -3,6 +3,7 @@
  * @param {IGrunt} grunt
  */
 module.exports = function (grunt) {
+  grunt.config("welcomeMessage", "Welcome to the build process!");
   grunt.config("root", "./");
   grunt.config("srcPath", "<%= root %>src");
   grunt.config("distPath", "<%= root %>dist");

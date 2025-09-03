@@ -28,4 +28,6 @@ module.exports = function (grunt) {
     "copy",
     "compress",
   ]);
+
+  grunt.log.writeln(grunt.config.get("welcomeMessage"));
 };
