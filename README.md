@@ -18,6 +18,10 @@ Playing with Grunt
 - Confidence
 - Freedom
 
+## Prerequisites
+
+- Support Node.js v20. v22 is not supported due to [`node-sass`](https://github.com/sass/node-sass/releases/tag/v9.0.0).
+
 ## Getting Started
 
 1. Install packages with `npm i`.
