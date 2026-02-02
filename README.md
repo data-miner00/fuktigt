@@ -1,6 +1,6 @@
 # fuktigt
 
-Playing with Grunt
+Playing with Grunt.js
 
 ## Features
 
@@ -20,12 +20,12 @@ Playing with Grunt
 
 ## Prerequisites
 
-- Support Node.js v20. v22 is not supported due to [`node-sass`](https://github.com/sass/node-sass/releases/tag/v9.0.0).
+- Support Node.js v22.
 
 ## Getting Started
 
 1. Install packages with `npm i`.
-2. Build the artifacts with `grunt`.
+2. Build the artifacts with `grunt` or `npm run build`.
 3. Run tests with `npm test`
 
 ## Resources

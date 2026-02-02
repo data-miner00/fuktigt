@@ -1,4 +1,4 @@
-var sass = require("node-sass");
+var sass = require("sass");
 
 /**
  * The task for transpiling Sass to CSS.
